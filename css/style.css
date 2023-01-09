@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+#charles-stores {
+    display: flex;
+    flex-direction: column;
+    /* grid-gap: 2px; */
+    /* height: 600px; */
+    margin: 50px auto;
+    border: 1px red solid;
+    background-color: rgb(216, 226, 204);
+    max-width: 900px;
+}
+
+#stockcontainer {
+    /* height: 200px; */
+    border: 1px red solid;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.info-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+img {
+    width: 200px;
+}
+
+li {
+    list-style: none;
+}
+
+.icon-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+i {
+    font-size: 200%;
+}
+
+input {
+    width: 40px;
+}
+
+.btn {
+    /* width: 200px; */
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.like {
+    font-size: 25px;
+    color: blue;
+    background-color: black;
+    text-transform: lowercase;
+    transition: 5ms ease-in-out;
+}
+
+.like.active {
+    color: red;
+    background-color: pink;
+    text-transform: uppercase;
+}
